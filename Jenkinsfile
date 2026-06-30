@@ -25,7 +25,7 @@ pipeline {
                 '''
             }
         }
-        
+
 
         stage('Run New Container') {
             steps {
@@ -34,6 +34,7 @@ pipeline {
                 '''
             }
         }
+        
     }
 
     post {
