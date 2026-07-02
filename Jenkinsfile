@@ -15,6 +15,18 @@ pipeline {
 
     stages {
 
+        stage('Verify Docker') {
+            steps {
+                sh '''
+                    if ! command -v docker >/dev/null 2>&1; then
+                        echo "ERROR: Docker CLI is not installed on this agent."
+                        exit 1
+                    fi
+                    docker --version
+                '''
+            }
+        }
+
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t $IMAGE_NAME:latest .'
