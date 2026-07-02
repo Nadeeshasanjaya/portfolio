@@ -43,7 +43,7 @@ export function Navbar() {
               <Terminal className="w-5 h-5 text-emerald-400" />
             </div>
             <span className="font-mono font-bold text-lg tracking-tight text-slate-100">
-              H.G.N. Sanjaya
+              H.G.Nadeesha Sanjaya
             </span>
           </a>
 
